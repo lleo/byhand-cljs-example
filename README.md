@@ -14,7 +14,7 @@ Which is really just:
     java -cp cljs.jar:src/cljs clojure.main build-nodejs-myapp.clj
     node myapp.js
 
-The myapp.js source script `goog.requires()` files from `out/`:
+The myapp.js source script calls `goog.require()` on files from `out/`:
 
     require('out/goog/bootstrap/nodejs.js')
     require('out/cljs_deps.js')
